@@ -6,6 +6,7 @@ html, body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: #0a0a0a;
     color: #fff;
+    padding-top: 70px;
 }
 
 .navbar {
@@ -16,6 +17,10 @@ html, body {
     background-color: #111;
     width: 100%;
     box-sizing: border-box;
+    position: fixed;  
+    top: 0;           
+    left: 0;
+    z-index: 1000; 
 }
 
 .logo-container {
@@ -31,14 +36,14 @@ html, body {
     border-radius: 50%;
 }
 .club-name {
-    color: #b8d5bf;
+    color: #74c6db;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-shadow:
-        0 0 4px rgba(184, 213, 191, 0.35),
-        0 0 8px rgba(184, 213, 191, 0.25),
-        0 0 14px rgba(184, 213, 191, 0.18);
+        0 0 4px #5ba9a759,
+        0 0 8px #43d6d640,
+        0 0 14px #6cada52e;
 }
 
 .main-nav ul {

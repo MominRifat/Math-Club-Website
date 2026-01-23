@@ -1,6 +1,19 @@
 {% extends "base.html" %} 
-
+{% load static %} 
+{% block title %}Home | Math Club CSE{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
 {% block content %}
-    <h1>Welcome to Math Club!</h1>
-    <p>This is the home page content.</p>
+    <div class="slider">
+        <img src="{% static 'images/img1.jpg' %}" alt="Slide 1" class="slide">
+        <img src="{% static 'images/img2.jpg' %}" alt="Slide 2" class="slide">
+        <img src="{% static 'images/img3.jpg' %}" alt="Slide 3" class="slide">
+        <img src="{% static 'images/img4.jpg' %}" alt="Slide 4" class="slide">
+        <div class="slider-overlay"></div>
+        <div class="slider-text animate-text">
+            <h1>Welcome to</h1>
+            <h1>Math Club CSE UAP</h1>
+        </div>
+    </div> 
 {% endblock %}
