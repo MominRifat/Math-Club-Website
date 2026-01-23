@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def panel(request):
-    return HttpResponse("This is the panel page.")
+    return render(request, 'panel/panel.html')

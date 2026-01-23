@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def joinus(request):
-    return HttpResponse("This is the join us page.")
+    return render(request, 'joinus/joinus.html')

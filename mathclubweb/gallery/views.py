@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def gallery(request):
-    return HttpResponse("This is the gallery page.")
+    return render(request, 'gallery/gallery.html')

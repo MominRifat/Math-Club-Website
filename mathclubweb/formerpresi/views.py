@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def president(request):
-    return HttpResponse("This is the former presidents page.")
+    return render(request, 'formerpresi/president.html')
