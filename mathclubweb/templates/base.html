@@ -4,25 +4,31 @@
     <title>Math Club</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">
-                <img src="{% static 'images/Math Club.png' %}" alt="Math Club Logo">
+            <div class="logo-container">
+                <img src="{% static 'images/Math Club.png' %}" alt="Logo" class="logo">
+                <span class="club-name">Math Club CSE</span>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="{% url 'home:home' %}">Home</a></li>
-                    <li><a href="{% url 'event:event'%}">Events</a></li>
-                    <li><a href="{% url 'panel:panel'%}">Team</a></li>
-                    <li><a href="{% url 'formerpresi:formerpresi'%}">Former Presidents</a></li>
-                    <li><a href="{% url 'gallery:gallery'%}">Gallery</a></li>
-                    <li><a href="{% url 'joinus:joinus'%}">Join Us</a></li>
-                    <li><a href="{% url 'resource:resource'%}">Resources</a></li>
-                    <li><a href="{% url 'contact:contact'%}">Contact</a></li>
+                    <li><a href="{% url 'home:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a></li>
+                    <li><a href="{% url 'event:event' %}" class="{% if request.resolver_match.url_name == 'event' %}active{% endif %}">Events</a></li>
+                    <li><a href="{% url 'panel:panel' %}" class="{% if request.resolver_match.url_name == 'panel' %}active{% endif %}">Team</a></li>
+                    <li><a href="{% url 'formerpresi:formerpresi' %}" class="{% if request.resolver_match.url_name == 'formerpresi' %}active{% endif %}">Former Presidents</a></li>
+                    <li><a href="{% url 'gallery:gallery' %}" class="{% if request.resolver_match.url_name == 'gallery' %}active{% endif %}">Gallery</a></li>
+                    <li><a href="{% url 'joinus:joinus' %}" class="{% if request.resolver_match.url_name == 'joinus' %}active{% endif %}">Join Us</a></li>
+                    <li><a href="{% url 'resource:resource' %}" class="{% if request.resolver_match.url_name == 'resource' %}active{% endif %}">Resources</a></li>
+                    <li><a href="{% url 'contact:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a></li>
                 </ul>
             </nav>
+            <div class="auth-links">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
         </div>
     </header>
     <main>
