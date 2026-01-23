@@ -23,7 +23,7 @@ urlpatterns = [
     path('eventview/', include('event.urls')),
     path('formerpresiview/', include('formerpresi.urls')),
     path('galleryview/', include('gallery.urls')),
-    path('homeview/', include('home.urls')),
+    path('', include('home.urls')),
     path('joinusview/', include('joinus.urls')),
     path('panelview/', include('panel.urls')),
     path('resourcesvies/', include('resource.urls')),

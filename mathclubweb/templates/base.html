@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Club</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/Math Club.png' %}" alt="Math Club Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home:home' %}">Home</a></li>
+                    <li><a href="{% url 'event:event'%}">Events</a></li>
+                    <li><a href="{% url 'panel:panel'%}">Team</a></li>
+                    <li><a href="{% url 'formerpresi:formerpresi'%}">Former Presidents</a></li>
+                    <li><a href="{% url 'gallery:gallery'%}">Gallery</a></li>
+                    <li><a href="{% url 'joinus:joinus'%}">Join Us</a></li>
+                    <li><a href="{% url 'resource:resource'%}">Resources</a></li>
+                    <li><a href="{% url 'contact:contact'%}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Math Club | All Rights Reserved</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
