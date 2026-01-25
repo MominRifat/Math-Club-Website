@@ -40,10 +40,15 @@
     <footer class="footer-main">
         <div class="logo-container-2">
                 <img src="{% static 'images/Math Club.png' %}" alt="Logo" class="logo-2">
-                <img src="{% static 'images/UAP.png' %}" alt="Logo" class="logo-2">
+                <img src="{% static 'images/UAP.png' %}" alt="Logo" class="logo-3">
         </div>
         <div class="footer-container">
-            <p>© 2026 Math Club | All Rights Reserved</p>
+            <ul class="extra-links">
+                <li><a href="{% url 'home:home' %}">Home</a></li>
+                <li><a href="{% url 'event:event' %}">Events</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Teams of Use</a></li>
+            </ul>
              <ul class="social-links">
                 <li>
                     <a href="https://web.facebook.com/mathclub.cse" target="_blank" class="social-icon">

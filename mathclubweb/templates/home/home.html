@@ -16,4 +16,74 @@
             <h1>Math Club CSE UAP</h1>
         </div>
     </div> 
+
+    <div class="update-section">
+        <h1>Latest Updates</h1>
+        <p>Stay tuned for upcoming events and announcements!</p>
+        <div>
+            <img src="{% static 'images/up1.jpg' %}" alt="Update 3" class="up">
+        </div>
+        <div>
+            <img src="{% static 'images/up2.jpg' %}" alt="Update 2" class="up">
+        </div>
+        <div>
+            <img src="{% static 'images/up3.jpg' %}" alt="Update 1" class="up">
+        </div>
+        </br>
+        <a href="{% url 'event:event' %}" class="btn">Explore All Updates</a>
+    </div>
+    <div class="do">
+    <h1>What We Do</h1>
+    <p>Explore our core activities and programs designed to foster</p>
+    <p>mathematical skills and community engagement.</p>
+
+    <div class="do-cards">
+        <div class="terminal-card">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <pre>
+<span class="cpp-keyword">#include</span> <span class="cpp-string">&lt;iostream&gt;</span>
+<span class="cpp-keyword">using</span> <span class="cpp-keyword">namespace</span> std;
+
+<span class="cpp-type">int</span> <span class="cpp-function">main</span>() {
+    <span class="cpp-comment">// Weekly Quiz</span>
+    <span class="cpp-type">string</span> mode = <span class="cpp-string">"Solo Contest"</span>;
+    <span class="cpp-type">int</span> marks = <span class="cpp-number">100</span>;
+    <span class="cpp-type">int</span> time = <span class="cpp-number">20</span>; <span class="cpp-comment">// minutes</span>
+    cout &lt;&lt; <span class="cpp-string">"Weekly Quiz Live!"</span> &lt;&lt; endl;
+    <span class="cpp-keyword">return</span> <span class="cpp-number">0</span>;
+}
+            </pre>
+        </div>
+        <div class="terminal-card">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <pre>
+<span class="cpp-keyword">#include</span> <span class="cpp-string">&lt;iostream&gt;</span>
+<span class="cpp-keyword">#include</span> <span class="cpp-string">&lt;vector&gt;</span>
+<span class="cpp-keyword">using</span> <span class="cpp-keyword">namespace</span> std;
+
+<span class="cpp-type">int</span> <span class="cpp-function">main</span>() {
+    <span class="cpp-type">vector</span>&lt;<span class="cpp-type">string</span>&gt; events = {
+        <span class="cpp-string">"Math Olympiad"</span>,
+        <span class="cpp-string">"Puzzle Hunt"</span>,
+        <span class="cpp-string">"Quick Quiz"</span>,
+        <span class="cpp-string">"Math Game Zone"</span>,
+        <span class="cpp-string">"Prize Giving Ceremony"</span>
+    };
+    cout &lt;&lt; <span class="cpp-string">"Math Fest Events"</span> &lt;&lt; endl;
+    <span class="cpp-keyword">return</span> <span class="cpp-number">0</span>;
+}
+            </pre>
+        </div>
+
+    </div>
+    </div>
+
 {% endblock %}
