@@ -183,6 +183,7 @@ html, body {
 
 /* Terminal Card */
 .terminal-card {
+    position: absolute;
     background: #0d1117;
     color: #c9d1d9;
     width: 430px;
