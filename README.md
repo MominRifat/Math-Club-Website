@@ -18,4 +18,4 @@ Features:
 
 🛠️ Dynamic Content: Easily update competitions, events, and resources without coding
 
-This project showcases a modern, interactive, and student-focused web platform for club management and engagement.
+This project showcases a modern, interactive, and student-focused web platform for club management and engagement...
